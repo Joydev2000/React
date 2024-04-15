@@ -5,9 +5,41 @@ import CardDataTrans from './CardDataTrans';
 
 import Crads from './Crads';
 import DarkLight from './DarkLight';
+import Useefect from './Useefect';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Footer from './components/Footer';
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+
+
+
+
+
 
 
 function App() {
+  const router = createBrowserRouter([
+  {
+    path : "/",
+    element :<> <Navbar/> <Home/> </>
+  },
+ 
+
+ 
+  {
+    path:"/Footer",
+    element :<> <Navbar/> <Footer/> </>
+  },
+  ]);
+
+
+
+
+
+
+
+
+
  var[a,b] = useState(1);
 
  const neww = ()=> {
@@ -24,7 +56,10 @@ function App() {
  }
  
   return (
+   
     <div className='main'>
+  
+  <RouterProvider router={router} />
     <h1 className='mainh'> this is main h1</h1>
     <h1 className='mainh'> {a}</h1>
     <h1 className='mainh'> {a}</h1>
@@ -43,7 +78,9 @@ function App() {
    < CardDataTrans gap="mt-12" img="https://images.pexels.com/photos/17070821/pexels-photo-17070821/free-photo-of-pair-of-puffins-sitting-in-grass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" name="halder" />  
    <Crads />
    <DarkLight />
-         
+         <Useefect />
+        
+
     </div>
 
   )
