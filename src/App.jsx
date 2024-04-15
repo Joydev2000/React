@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import Newsub from './Newsub'
 import Bgchanger from './Bgchanger';
 import CardDataTrans from './CardDataTrans';
-import CardTwo from './CardTwo';
+
 import Crads from './Crads';
+import DarkLight from './DarkLight';
 
 
 function App() {
@@ -34,13 +35,14 @@ function App() {
     <button onClick={neww} >{a}</button>
     <button onClick={nre}>{a}</button>
 
-   {/* <Newsub age="25" data= {{age:24 , name :"joydev"}} /> */}
-   {/* <Bgchanger /> */}
+   <Newsub age="25" data= {{age:26, name :"joydev"}} />
+   <Bgchanger />
 
 
-   {/* < CardDataTrans img= "https://images.pexels.com/photos/14734162/pexels-photo-14734162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" name="joydev"  />
-   < CardDataTrans gap="mt-12" img="https://images.pexels.com/photos/17070821/pexels-photo-17070821/free-photo-of-pair-of-puffins-sitting-in-grass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" name="halder" />   */}
+   < CardDataTrans img= "https://images.pexels.com/photos/14734162/pexels-photo-14734162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" name="joydev"  />
+   < CardDataTrans gap="mt-12" img="https://images.pexels.com/photos/17070821/pexels-photo-17070821/free-photo-of-pair-of-puffins-sitting-in-grass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" name="halder" />  
    <Crads />
+   <DarkLight />
          
     </div>
 
