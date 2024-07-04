@@ -16,6 +16,16 @@ function Navbar() {
 
           Footer
         </NavLink>
+        <NavLink
+          className={({ isActive }) =>` ${ isActive ? "text-orange-700" : "text-gray-700"} border-b block py-2 pr-4 pl-3 duration-200 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 ml-10`}to="/Login">
+
+          Login
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>` ${ isActive ? "text-orange-700" : "text-gray-700"} border-b block py-2 pr-4 pl-3 duration-200 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 ml-10`}to="/Newrourtest">
+
+         Newrourtest
+        </NavLink>
       </nav>
     </div>
   );

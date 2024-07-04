@@ -10,6 +10,8 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+import Login from './Components/Login';
+import Newrourtest from './Components/Newrourtest';
 
 
 
@@ -18,6 +20,7 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 
 
 function App() {
+
   const router = createBrowserRouter([
   {
     path : "/",
@@ -29,6 +32,18 @@ function App() {
   {
     path:"/Footer",
     element :<> <Navbar/> <Footer/> </>
+  },
+  ,
+ 
+
+ 
+  {
+    path:"/Login",
+    element :<> <Navbar/> <Login/> </>
+  },
+  {
+    path:"/Newrourtest",
+    element :<> <Navbar/> <Newrourtest/> </>
   },
   ]);
 
@@ -60,6 +75,7 @@ function App() {
     <div className='main'>
   
   <RouterProvider router={router} />
+
     <h1 className='mainh'> this is main h1</h1>
     <h1 className='mainh'> {a}</h1>
     <h1 className='mainh'> {a}</h1>
